@@ -7,8 +7,8 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         result = []
-        DEFAULT_ROW = [1]
 
+        #if row == 0 return because triangle is nonexistent
         #check if 0 rows, else give us the basic row to start off
         if num_rows == 0:
             return result
