@@ -1,3 +1,11 @@
+"""
+Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
+                                       
+Best stats:
+    Runtime: 12 ms, faster than 93.27% of Python online submissions for Pascal's Triangle.
+    Memory Usage: 11.8 MB, less than 50.00% of Python online submissions for Pascal's Triangle.
+"""
+
 import pprint
 
 class Solution(object):

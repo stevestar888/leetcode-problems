@@ -2,12 +2,12 @@
 Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
 
 My approach: 
-    In 118-pascal_triangle_i, it made sense to genereate every row. Here, since we only care about
+    In 118-pascal_triangle_i, it made sense to generate every row. Here, since we only care about
     the k-th row, we can use a clever trick with binomial coefficient: https://en.wikipedia.org/wiki/Binomial_coefficient.
     Essentially, Pascal's triangle is the same as the binomial coefficient, which can also be 
     represented with combinations: nCr = n! / (r! * (n - r)!)
                                        = n! / r! / (n - r)!
-                                       
+
 Best Stats:
 Runtime: 16 ms, faster than 82.35% of Python online submissions for Pascal's Triangle II.
 Memory Usage: 11.8 MB, less than 34.61% of Python online submissions for Pascal's Triangle II.

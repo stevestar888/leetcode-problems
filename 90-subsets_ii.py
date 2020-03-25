@@ -1,3 +1,10 @@
+"""
+Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+
+Stats:
+    Runtime: 28 ms, faster than 38.61% of Python online submissions for Subsets II.
+    Memory Usage: 11.9 MB, less than 30.77% of Python online submissions for Subsets II.
+"""
 
 def subsetsWithDup(self, nums):
     """
