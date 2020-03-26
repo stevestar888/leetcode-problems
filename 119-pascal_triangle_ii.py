@@ -23,7 +23,7 @@ class Solution(object):
         """
         n = rowIndex
         result = []
-        for r in range(n + 1):
+        for r in range(n + 1): #since range isn't inclusive, iterate n times
             coeff = f(n) / f(r) / f(n-r)
             result.append(int(coeff))
         return result
