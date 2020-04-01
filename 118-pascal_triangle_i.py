@@ -42,7 +42,3 @@ class Solution(object):
 
 obj = Solution.generate(None, 12)
 pprint.pprint(obj)
-
-# Best Stats  
-# Runtime: 12 ms, faster than 93.27% of Python online submissions for Pascal's Triangle.
-# Memory Usage: 11.8 MB, less than 50.00% of Python online submissions for Pascal's Triangle.

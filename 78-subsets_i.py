@@ -7,7 +7,7 @@ Stats:
 """
 
 class Solution(object):
-    def subsets(nums):
+    def subsets(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -27,7 +27,7 @@ class Solution(object):
 
 
     #shortened
-    def subsets(nums):
+    def subsets(self, nums):
         x = len(nums)
         powerset = []
         for i in range(1 << x):
@@ -36,10 +36,10 @@ class Solution(object):
 
 
     #extreme shortened
-    def subsets(nums):
+    def subsets(self, nums):
         return [[nums[j] for j in range(len(nums)) if (i & (1 << j))] for i in range(1 << len(nums))]
 
 
 nums = [1, 2, 3, 4]
-obj = Solution.subsets(nums)
+obj = Solution.subsets(None, nums)
 print(obj)
