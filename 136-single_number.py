@@ -1,4 +1,10 @@
 """
+Approach: Run through list and map to dictionary. If a number hits the dictionary once,
+    then the number is the singleton.
+
+Runtime: O(n)
+
+
 Runtime: 64 ms, faster than 94.82% of Python online submissions for Single Number.
 Memory Usage: 15.2 MB, less than 5.40% of Python online submissions for Single Number.
 """
