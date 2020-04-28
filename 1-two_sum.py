@@ -1,9 +1,13 @@
 """
-Strat: Iterate list and store the index of occurance in dictionary. If the
-    num's complement exists in dictionary, retreive its index! 
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
-Runtime: 40 ms, faster than 61.01% of Python online submissions for Two Sum.
-Memory Usage: 14.1 MB, less than 5.13% of Python online submissions for Two Sum.
+Strat: 
+    Iterate list and store the index of occurance in dictionary. If the num's complement exists in 
+    dictionary, retreive its index! (Continue iterating if not)
+
+Stats:
+    Runtime: 40 ms, faster than 61.01% of Python online submissions for Two Sum.
+    Memory Usage: 14.1 MB, less than 5.13% of Python online submissions for Two Sum.
 """
 
 
@@ -19,7 +23,6 @@ class Solution(object):
             complement = target - num
             
             if nums_dict.get(complement) > -1: #found counterpart
-                print("counterpart: {}".format(complement))
                 return [i, nums_dict.get(complement)]
             else: #store our num in the dict
                 nums_dict[num] = i
