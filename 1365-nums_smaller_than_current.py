@@ -9,8 +9,8 @@ Strat: The easiest way to do this problem is using sort*. After you sort nums,
 
     *Python's built-in sort is TimSort, which is O(nlgn) at worst; however, using an 
     implementation of Counting Sort, Radix Sort, Bucket Sort, or any other linear sort 
-    would allow you to do this problem in O(n) time. On and amortized basis though, 
-    Timsort will have comprabale runtimes.
+    would allow you to do this problem in O(n) time. On an amortized basis though, 
+    Timsort will have comparable runtimes.
 
 Runtime: O(nlgn) time, O(n) space -- TimSort takes O(nlgn) time (see ^) + rankings dictionary
     Runtime: 36 ms, faster than 97.60% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
@@ -40,7 +40,7 @@ class Solution(object):
 #         for i, num in enumerate(sorted_nums):
 #             if num > prev_num: #moved on to a new num
 #                 rankings[num] = i
-#             prev_num = num    
+#             prev_num = num
         
         #now that we've assigned rankings, iterate through the
         #unsorted nums, and find its corresponding ranking
