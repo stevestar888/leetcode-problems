@@ -28,14 +28,16 @@ class Solution(object):
     res = float('inf')  #the minimum so far
 
     def minDiffInBST(self, root):
-        if root is None:
+        if root == None:
             return
         
+        #call left 
         self.minDiffInBST(root.left)
-		# evaluate and set the current node as the node previously evaluated
+		# evaluate current node, then update prev node
         self.res = min(self.res, root.val - self.pre)
         self.pre = root.val
 		
+        #call right
         self.minDiffInBST(root.right)
         return self.res
     
