@@ -14,7 +14,6 @@ Strat:
 Runtime: O(n) runtime -- Using a modification of DFS (Pre-order, in-order and post-order traversal are all DFS variants)
     Runtime: 12 ms, faster than 97.99% of Python online submissions for Minimum Distance Between BST Nodes.
     Memory Usage: 12.9 MB, less than 14.29% of Python online submissions for Minimum Distance Between BST Nodes.
-
 """
 
 # Definition for a binary tree node.
