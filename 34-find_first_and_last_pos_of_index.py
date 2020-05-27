@@ -23,6 +23,8 @@ Runtime: O(lgn) time, O(1) space -- two binary searches + no additional DSs
     Runtime: 1600 ms, faster than 5.01% of Python online submissions for Find First and Last Position of Element in Sorted Array.
     Memory Usage: 100.1 MB, less than 5.88% of Python online submissions for Find First and Last Position of Element in Sorted Array.
     
+    Note: The actual Runtime in ms is much better if you do binary search iteratively. Then check if left_index == -1
+    before looking for right_index
 """
 
 class Solution(object):
