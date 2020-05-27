@@ -10,7 +10,7 @@ Strat:
     we ar checking between 0 < abs(num) ≤ N on each iteration.
 
 Runtime: O(n) time, O(1) space -- we take three pass through nums + in place modification
-    Runtime: Runtime: 24 ms, faster than 66.61% of Python online submissions for First Missing Positive.
+    Runtime: 16 ms, faster than 97.75% of Python online submissions for First Missing Positive.
     Memory Usage: 12.6 MB, less than 5.88% of Python online submissions for First Missing Positive.
 """
 class Solution(object):
