@@ -1,5 +1,8 @@
 """
-Given a set of distinct integers, nums, return all possible subsets (the power set).
+https://leetcode.com/problems/subsets/
+
+Strat: 
+    Uses bitmasks to find all lexigraphical generations of i.
 
 Stats:
     Runtime: 20 ms, faster than 70.88% of Python online submissions for Subsets.
@@ -11,8 +14,6 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
-
-        Uses bitmasks to find all lexigraphical generations of i 
         """
         powerset = []  # used to store all sets
         for i in range(1 << len(nums)):  # iterate 2^sets
@@ -23,7 +24,7 @@ class Solution(object):
                     # if is a match, add the j-th position element to subset
                     subset.append(nums[j])
             powerset.append(subset)
-        return(powerset)
+        return powerset
 
 
     #shortened
