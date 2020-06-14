@@ -8,6 +8,7 @@ Strat:
 
     When we don't have anymore digits to choose from, then we've finished generating
     that particular permutation.
+    (iterative: https://leetcode.com/problems/permutations/discuss/431726/Beats-99-in-O(n-*-n!)-with-an-iterative-approach-in-Python)
     
 Stats:
     Runtime: 32 ms, faster than 43.85% of Python online submissions for Permutations.
