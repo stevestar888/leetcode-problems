@@ -18,7 +18,7 @@ https://leetcode.com/problems/valid-parentheses/discuss/9478/No-stack-O(1)-space
 class Solution(object):
     def isValid(self, symbols):
         """
-        :type s: str
+        :type symbols: str
         :rtype: bool
         """
         
