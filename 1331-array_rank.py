@@ -10,6 +10,7 @@ Stats: O(n*lgn) time, O(n) space -- one loop to find rank, and another loop assi
 Optimization: 
     I don't think there is a linear solution because sort is the easiest way to find rank. Otherwise, 
     you would have to take linear time to find the right rank for an element--and do that n times. 
+    So either O(nlgn) time O(n) space OR O(n^2) time and O(1) space.
 """
 
 class Solution(object):
