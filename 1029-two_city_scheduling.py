@@ -45,3 +45,29 @@ class Solution(object):
                 total_cost += flight2
             
         return total_cost
+
+    #even better solution (not mine)
+    def twoCitySchedCost(self, costs):
+        """
+        :type costs: List[List[int]]
+        :rtype: int
+        """
+        costs = sorted(costs, key=lambda x:abs(x[0]-x[1]), reverse=True)
+        max_a = max_b = len(costs) // 2
+        min_cost = 0
+        for cost_a, cost_b in costs:
+            if cost_a < cost_b:
+                if max_a > 0:
+                    min_cost += cost_a
+                    max_a -= 1
+                else:
+                    min_cost += cost_b
+                    max_b -= 1
+            else:
+                if max_b > 0:
+                    min_cost += cost_b
+                    max_b -= 1
+                else:
+                    min_cost += cost_a
+                    max_a -= 1
+        return min_cost
