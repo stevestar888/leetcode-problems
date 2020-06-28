@@ -5,7 +5,8 @@ Strat:
     1. make two dictionaries: one to store s-->t mappings, and one to store t-->s mappings
     2. traverse through s & t
     3. if mapping is not there: add it; if mapping is there, check it
-
+    (inspired by: https://leetcode.com/problems/isomorphic-strings/discuss/486424/python3-double-map-90-100)
+    
 Example:
     paper -> title
     
