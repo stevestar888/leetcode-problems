@@ -9,6 +9,7 @@ Runtime: O(n) time, O(1) space
     Memory Usage: 13.7 MB, less than 5.26% of Python online submissions for Missing Number.
 
 More interesting solution: https://leetcode.com/problems/missing-number/discuss/69891/1-line-Python-Solution
+    it uses sum(range( ... ))
 """
 
 class Solution(object):
