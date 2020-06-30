@@ -6,7 +6,6 @@ Strat: Look for the middle elem, then recurse on left and right.
 Stats:
     Runtime: 72 ms, faster than 24.04% of Python online submissions for Convert Sorted Array to Binary Search Tree.
     Memory Usage: 17 MB, less than 65.96% of Python online submissions for Convert Sorted Array to Binary Search Tree.
-
 """
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -15,6 +14,10 @@ Stats:
 #         self.left = left
 #         self.right = right
 class Solution(object):
+    
+    """
+    Try #1--uses helper but works no problem
+    """
     def sortedArrayToBST(self, nums):
         """
         :type nums: List[int]
@@ -42,3 +45,21 @@ class Solution(object):
         
         return parent
         
+        
+    """
+    Try #2--code cleaned up a little more
+    """
+    def sortedArrayToBST(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: TreeNode
+        """
+        if nums == []:
+            return None
+        
+        mid = len(nums) // 2
+        parent = TreeNode(nums[mid])
+        parent.left = self.sortedArrayToBST(nums[:mid])
+        parent.right = self.sortedArrayToBST(nums[mid + 1:])
+        
+        return parent
