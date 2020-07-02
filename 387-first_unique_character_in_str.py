@@ -19,7 +19,7 @@ class Solution(object):
         return -1
     
     """
-    O(n) solution--using dictionary-equivalent DS
+    O(n) solution, using dictionary-like DS
     
     Runtime: 136 ms, faster than 65.45% of Python online submissions for First Unique Character in a String.
     Memory Usage: 13 MB, less than 85.64% of Python online submissions for First Unique Character in a String.
