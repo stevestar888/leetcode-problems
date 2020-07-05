@@ -30,6 +30,7 @@ class Solution(object):
         
         return root
     
+    
     """
     Iterative
     
@@ -45,18 +46,18 @@ class Solution(object):
         if not root:
             return None
         
-        stack = deque()
-        stack.append(root)
+        queue = deque()
+        queue.append(root)
         
-        while stack:
-            node = stack.popleft()
+        while queue:
+            node = queue.popleft()
             
             #swap the left & right children with each other
             node.left, node.right = node.right, node.left
             
             if node.left:
-                stack.append(node.left)
+                queue.append(node.left)
             if node.right:
-                stack.append(node.right)
+                queue.append(node.right)
                 
         return root
