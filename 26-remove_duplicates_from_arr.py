@@ -13,7 +13,7 @@ Stats: O(n) time, O(1) space -- one pass thru nums + modifying in-place
     Runtime: 60 ms, faster than 97.83% of Python online submissions for Remove Duplicates from Sorted Array.
     Memory Usage: 14.5 MB, less than 55.45% of Python online submissions for Remove Duplicates from Sorted Array.
 
-Godsent solutions: 
+Godsent solutions:
     https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/11780/5-lines-C%2B%2BJava-nicer-loops
 """
 class Solution(object):
