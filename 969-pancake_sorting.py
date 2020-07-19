@@ -13,6 +13,9 @@ Strat:
     
 Good solution, but uses extra DS:
     https://leetcode.com/problems/pancake-sorting/discuss/274921/Python-Detailed-Explanation-for-This-Problem
+
+Some magic:
+    https://leetcode.com/problems/pancake-sorting/discuss/494417/Dew-It-or-True-O(n)-or-Explained-with-Diagrams
 """
 class Solution(object):
     def pancakeSort(self, arr):
