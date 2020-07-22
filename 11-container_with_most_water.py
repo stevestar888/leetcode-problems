@@ -2,7 +2,9 @@
 https://leetcode.com/problems/container-with-most-water/
 
 Strat: 
-    2 pointers
+    2 pointers, one that starts on left and one on right. Continuously close
+    in on the container by moving whichever pointer is at the smaller height.
+    Also, it's *VOLUME* not *AREA*. Thanks for coming to my ted talk.
     
 Stats: O(n) time, O(1) space
     Runtime: 116 ms, faster than 46.73% of Python online submissions for Container With Most Water.
@@ -21,6 +23,9 @@ class Solution(object):
             return 0
         
         def calculate_vol(l, r):
+            """
+            Calculate the volume bounded by indicies l and r
+            """
             height = min(heights[l], heights[r])
             width = r - l
             return height * width
