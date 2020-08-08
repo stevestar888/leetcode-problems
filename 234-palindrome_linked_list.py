@@ -12,6 +12,8 @@ Strat:
 Stats: O(n) / linear time, O(1) / constant space is most optimal
 
 As always, Stefan killed it here: https://leetcode.com/problems/palindrome-linked-list/discuss/64500/11-lines-12-with-restore-O(n)-time-O(1)-space
+
+PhDs and not PhDs bickering about read-only, constant space, etc.: https://leetcode.com/problems/palindrome-linked-list/discuss/64493/Reversing-a-list-is-not-considered-%22O(1)-space%22
 """
 class Solution(object):
     """
