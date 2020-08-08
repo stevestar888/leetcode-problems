@@ -1,15 +1,19 @@
 """
 https://leetcode.com/problems/maximum-subarray/
 
+Strat: 
+    Use DP:
+    [-2,1,-3,4,-1,2,1,-5,4] <-- nums
+    [-2,1,-2,4, 3,5,6, 1,5] <-- stores the max subarray ending at index i
+    
 Stats:
-    Runtime: 56 ms, faster than 46.95% of Python online submissions for Maximum Subarray.
-    Memory Usage: 13.1 MB, less than 97.89% of Python online submissions for Maximum Subarray.
+    O(n) time, O(n) space, but space can go to O(1) using DP with n vars
+    
+Very clear Divide & Conquer: https://leetcode.com/problems/maximum-subarray/discuss/578388/Divide-and-Conquer.
 """
 class Solution(object):
     """
     O(n) time, O(n) space -- one pass thru nums and one pass thru dp + store the dp results in an array
-    [-2,1,-3,4,-1,2,1,-5,4] <-- nums
-    [-2,1,-2,4, 3,5,6, 1,5] <-- stores the max subarray ending at index i
     """
     def maxSubArray(self, nums):
         """
