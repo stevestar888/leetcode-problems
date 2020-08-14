@@ -1,5 +1,5 @@
 """
-Jul 18, 2020 - solved sucessful during interview
+Sat, Jul 18, 2020, 12:00 PM
 https://www.pramp.com/question/15oxrQx6LjtQj9JK9XqA
 
 Given tree (not necessarily binary) (each child has a cost), 

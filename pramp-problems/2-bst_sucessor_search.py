@@ -1,5 +1,5 @@
 """
-Jul 19, 2020 - did not get to the optimal solution during interview
+Sun, Jul 19, 2020, 4:00 PM
 https://www.pramp.com/question/MW75pP53wAtzNPVLPG2b
 
 Given a node inputNode in a BST, you’re asked to write a function findInOrderSuccessor that 

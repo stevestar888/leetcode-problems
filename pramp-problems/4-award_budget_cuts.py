@@ -1,5 +1,7 @@
 """
-https://www.pramp.com/challenge/r1Kw0vwG6OhK9AEGAyWV
+Wed, Aug 12, 2020, 8:04 AM
+Question + Coding interface: https://www.pramp.com/challenge/r1Kw0vwG6OhK9AEGAyWV
+Just the answer: https://www.pramp.com/question/r1Kw0vwG6OhK9AEGAyWV
 
 Given an array grantsArray of the original grants and the reduced budget newBudget, 
 write a function findGrantsCap that finds in the most efficient manner a cap such that 

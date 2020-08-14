@@ -1,5 +1,5 @@
 """
-Aug 10, 2020 - solved sucessful during interview
+Mon, Aug 10, 2020, 2:04 PM
 https://www.pramp.com/question/Q5G1jZ1OWdtZ3GbAGpNE
 
 Strat:
