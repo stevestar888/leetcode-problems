@@ -1,6 +1,8 @@
 """
 https://leetcode.com/problems/permutation-in-string/submissions/
 
+(Is pretty similar to 438. Find All Anagrams in a String)
+
 Strat:
     Use sliding window. Initially, we preprocess s1 to see how many of each
     letter we need (this becomes our "target" for the sliding window to match).
