@@ -1,7 +1,7 @@
 """
-Fri, Aug 14, 2020, 8:04 AM
+https://www.pramp.com/challenge/L3wQBnQYAEh5K97W9ONK
 
-
+Is essential leetcode 2sum
 
 input:  arr = [4, 6, 10, 15, 16],  lim = 21
                   ^      ^
