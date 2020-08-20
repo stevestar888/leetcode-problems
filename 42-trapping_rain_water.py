@@ -14,8 +14,10 @@ Strat:
     For the final case, finding where the water will be trapped requires 
     us to further iterate through the array, starting from the pointer,
     leading the overall runtime for this to be n^2, but constant space.
+    
     The linear solution requries two pointers, one from the left and one
-    from the right, both closing in.
+    from the right, both closing in. Here's something:
+    https://github.com/bt-dot/LeetCode/blob/master/Arrays%20and%20Strings/trapRainWater.java
     
 Stats: O(n^2) time, O(1) space -- iterate through the array, nested with finding the "next max"
     Runtime: 56 ms, faster than 29.90% of Python online submissions for Trapping Rain Water.
