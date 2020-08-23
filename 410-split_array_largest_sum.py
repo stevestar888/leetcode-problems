@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/split-array-largest-sum/submissions/
 
+Same problem as: 
+https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+https://leetcode.com/problems/koko-eating-bananas/
+
 Strat:
     Use Binary Search. While nums isn't sorted and we can't do binary search on that,
     we can do binary search on the possibilies of the output (this is very similar 
