@@ -1,8 +1,8 @@
 """
-A binary tree is univalued if every node in the tree has the same value.
-Return true if and only if the given tree is univalued.
+https://leetcode.com/problems/univalued-binary-tree/
 
-My approach: traverse through the tree and check if the parent node's value is the same as the children's values
+Strat: 
+    Traverse through the tree and check if the parent node's value is the same as the children's values
 
 Stats:
     Runtime: 16 ms, faster than 81.73% of Python online submissions for Univalued Binary Tree.
