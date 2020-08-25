@@ -1,11 +1,11 @@
 """
-Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+https://leetcode.com/problems/move-zeroes/
 
 Strat: look for non-zero digits in the array. Once you found one, move it to start
     of the array. Repeat until you've iterated through the entire array, where
     you fill in zeros for the rest of the elements.
     
-Runtime: 
+Stats: 
     Runtime: 32 ms, faster than 93.26% of Python online submissions for Move Zeroes.
     Memory Usage: 13.7 MB, less than 5.06% of Python online submissions for Move Zeroes.
 """
