@@ -36,6 +36,7 @@ class Solution(object):
         """
         len1 = len(text1)
         len2 = len(text2)
+
         def lcs(idx1, idx2):
             """
             :type word1: str
@@ -64,13 +65,13 @@ class Solution(object):
             memo[(idx1, idx2)] = answer
             return answer
         
-        #--------------end helper function-------------- 
+        #--------------end helper function--------------
         
         #don't know why 2d arrays to store answers don't work:
         # memo = [[-1] * len(text2)] * len(text1)
         # memo = [[-1] for _ in range(len2) for _ in range(len1)]
         #use a dictionary for now, which works just as well
-        memo = {} 
+        memo = {}
         return lcs(0, 0)
     
     
@@ -108,7 +109,15 @@ class Solution(object):
     
     Inspired by: https://leetcode.com/problems/longest-common-subsequence/discuss/473089/Python-DP-with-T(n)-O(nm)-and-S(n)-O(m)
     
-    Stats: O(n * m) time, O()
+    Note: 
+        The array will be allocated with length of the shorter word
+
+        iceberg vs pine --> 7 x 4
+
+
+
+
+    Stats: O(n * m) time, O(min(n, m))
         Runtime: 300 ms, faster than 92.66% of Python online submissions for Longest Common Subsequence.
         Memory Usage: 12.7 MB, less than 97.13% of Python online submissions for Longest Common Subsequence.
     """
@@ -130,14 +139,14 @@ class Solution(object):
             prev_diagonal = 0
 
             for j in range(1, len2):
-                curr = memo[j]
+                temp = memo[j]
                 
                 if text1[i - 1] == text2[j - 1]:
                     memo[j] = prev_diagonal + 1
                 else:
                     memo[j] = max(memo[j - 1], memo[j])
             
-                prev_diagonal = curr
+                prev_diagonal = temp
             # print(memo)
             
         return memo[-1]
