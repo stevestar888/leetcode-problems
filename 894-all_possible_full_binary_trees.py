@@ -1,5 +1,7 @@
 """
 https://leetcode.com/problems/all-possible-full-binary-trees/
+
+Inspired by: https://leetcode.com/problems/all-possible-full-binary-trees/discuss/596073/Simple-to-Understand-or-Python-Recursion
 """
 class Solution(object):
     def allPossibleFBT(self, remaining_nodes):
@@ -29,4 +31,4 @@ class Solution(object):
                     
                     result.append(root)
                     
-        return result89
+        return result
