@@ -1,3 +1,8 @@
+"""
+https://leetcode.com/problems/global-and-local-inversions/
+
+TODO: global inversions not working & there's a better way to do...
+"""
 class Solution(object):
     def isIdealPermutation(self, A):
         """
