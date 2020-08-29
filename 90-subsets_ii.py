@@ -1,5 +1,8 @@
 """
-Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+https://leetcode.com/problems/subsets-ii/
+
+Strat:
+    Apply the strat from Subset I and use a set.
 
 Stats:
     Runtime: 28 ms, faster than 38.61% of Python online submissions for Subsets II.
