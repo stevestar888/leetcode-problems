@@ -4,6 +4,7 @@ Brute force
 Related: 
 https://leetcode.com/problems/design-hashset/
 
+
 Stats:
     Runtime: 448 ms, faster than 35.86% of Python online submissions for Design HashMap.
     Memory Usage: 37.3 MB, less than 14.08% of Python online submissions for Design HashMap.
@@ -17,11 +18,11 @@ Stats:
     101 % 17 -> 16
     26 % 17 -> 9 ??
     
-    optimal load factor: 50% - 75%
+    optimal load factor*: 50% - 75%
     
     x * 0.75 ≈ 3000
     
-    
+*https://stackoverflow.com/questions/10901752/what-is-the-significance-of-load-factor-in-hashmap
     
 """
 class MyHashMap(object):
