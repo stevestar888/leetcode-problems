@@ -1,4 +1,9 @@
 """
+https://leetcode.com/problems/binary-tree-postorder-traversal/
+
+Strat: 
+    Do recursively. Iterative needs additional space or destroying the tree.
+    
 Post : Left Right Me
 
     4
