@@ -1,12 +1,12 @@
 """
-Write a function to find the longest common prefix string amongst an array of strings.
+https://leetcode.com/problems/longest-common-prefix/solution/
 
 Strat:
     Iterate through the array once to find the shortest word; this is the most letters 
     we'll need to iterate. Then loop through array to see if the common prefix
     holds for all array elements. Return once there's a violation.
 
-Stats:
+Stats: #TODO: can do in better than quadratic time
     Runtime: 8 ms, faster than 99.97% of Python online submissions for Longest Common Prefix.
     Memory Usage: 12.8 MB, less than 6.25% of Python online submissions for Longest Common Prefix.
 
