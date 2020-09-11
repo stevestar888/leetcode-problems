@@ -1,5 +1,5 @@
 """
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+https://leetcode.com/problems/two-sum/submissions/
 
 Strat: 
     Iterate list and store the index of occurance in dictionary. If the num's complement exists in 
