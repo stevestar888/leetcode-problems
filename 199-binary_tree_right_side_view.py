@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/binary-tree-right-side-view/submissions/
+https://leetcode.com/problems/binary-tree-right-side-view/
 
 Stategy: use BFS to find when we have reached the end of a level (this is what the inner for loop does). 
     The last item at a given level is therefore the rightmost element. 
