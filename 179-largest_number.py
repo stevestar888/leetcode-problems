@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/largest-number/submissions/
+https://leetcode.com/problems/largest-number/
 
 This is actually kind of an awful problem.
 
@@ -7,6 +7,7 @@ Strat: the biggest leading digits have to go first; the easiest way to check for
     is the caste num elements into strings and concatenate those together. 
 
 Some considerations:
+    Look at the solutions...
     
 Runtime: O(nlgn) time, O(n) space -- runtime would be linear, but we have to sort
     Runtime: 24 ms, faster than 86.87% of Python online submissions for Largest Number.
