@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/submissions/
+https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
 
 Runtime: O(n) — three runs, one to %, one to make dict, one to parse dict
     Runtime: 216 ms, faster than 52.59% of Python online submissions for Pairs of Songs With Total Durations Divisible by 60.
