@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/verifying-an-alien-dictionary/submissions/
+https://leetcode.com/problems/verifying-an-alien-dictionary/
 
 Strat: 
     Iterate through order to build up a Data Structure that stores rank. Afterwards,
