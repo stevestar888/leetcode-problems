@@ -1,8 +1,9 @@
 """
-Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
+https://leetcode.com/problems/number-complement/
 
-My approach:
+Strat:
     Generate the complement's binary string using num. Convert that binary string back into an int.
+    
 Stats:
     Runtime: 16 ms, faster than 74.90% of Python online submissions for Number Complement.
     Memory Usage: 12.7 MB, less than 14.29% of Python online submissions for Number Complement.
@@ -41,6 +42,3 @@ class Solution(object):
             index += 1 #increase power of 2
         
         return result
-
-a = Solution.findComplement(None, 5)
-print(a)
