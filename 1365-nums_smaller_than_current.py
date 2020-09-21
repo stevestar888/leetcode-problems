@@ -18,6 +18,7 @@ Runtime: O(nlgn) time, O(n) space -- TimSort takes O(nlgn) time (see ^) + rankin
 """
 
 class Solution(object):
+    #Try #1 on May23,2020
     def smallerNumbersThanCurrent(self, nums):
         """
         :type nums: List[int]
@@ -45,3 +46,23 @@ class Solution(object):
         #now that we've assigned rankings, iterate through the
         #unsorted nums, and find its corresponding ranking
         return [rankings[num] for num in nums]
+    
+    #Try #2 on sept20,2020
+    def smallerNumbersThanCurrent(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        sorted_nums = sorted(nums)
+        
+        order = {}
+        
+        rank = 0
+        prev_num = float('-inf')
+        for num in sorted_nums:
+            if num != prev_num:
+                order[num] = rank
+                prev_num = num
+            rank += 1
+            
+        return [order[num] for num in nums]
