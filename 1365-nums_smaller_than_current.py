@@ -12,13 +12,14 @@ Strat: The easiest way to do this problem is using sort*. After you sort nums,
     would allow you to do this problem in O(n) time. On an amortized basis though, 
     Timsort will have comparable runtimes.
 
-Runtime: O(nlgn) time, O(n) space -- TimSort takes O(nlgn) time (see ^) + rankings dictionary
-    Runtime: 36 ms, faster than 97.60% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
-    Memory Usage: 12.8 MB, less than 100.00% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
 """
-
 class Solution(object):
     #Try #1 on May23,2020
+    """
+    Stats: O(nlgn) time, O(n) space -- TimSort takes O(nlgn) time (see ^) + rankings dictionary
+    Runtime: 36 ms, faster than 97.60% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
+    Memory Usage: 12.8 MB, less than 100.00% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
+    """
     def smallerNumbersThanCurrent(self, nums):
         """
         :type nums: List[int]
@@ -47,7 +48,15 @@ class Solution(object):
         #unsorted nums, and find its corresponding ranking
         return [rankings[num] for num in nums]
     
+    
     #Try #2 on sept20,2020
+    """
+    Regular sort
+    
+    Stats: O(n lgn) - normal sort
+        Runtime: 36 ms, faster than 97.35% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
+        Memory Usage: 12.7 MB, less than 92.98% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
+    """
     def smallerNumbersThanCurrent(self, nums):
         """
         :type nums: List[int]
@@ -66,3 +75,30 @@ class Solution(object):
             rank += 1
             
         return [order[num] for num in nums]
+    
+    """
+    Bucket sort
+    
+    Stats: O(n) - bucket sort
+        Runtime: 40 ms, faster than 93.66% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
+        Memory Usage: 12.7 MB, less than 53.93% of Python online submissions for How Many Numbers Are Smaller Than the Current Number.
+    """
+    def smallerNumbersThanCurrent(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        #allocate bucket size of biggest num
+        bucket = [0] * (max(nums) + 1)
+        
+        for num in nums:
+            bucket[num] += 1
+
+        rankings = {}
+        rank = 0
+        
+        for num, count in enumerate(bucket):
+            rankings[num] = rank
+            rank += count
+        
+        return [rankings[num] for num in nums]
