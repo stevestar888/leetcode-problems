@@ -1,7 +1,10 @@
 """
-https://leetcode.com/problems/find-the-duplicate-number/submissions/
-    
-Runtime: 
+https://leetcode.com/problems/find-the-duplicate-number/
+
+Strat:
+    Use the array itself to store if we've seen the num.
+
+Stats: O(n) / linear time, O(1) / constant space 
     Runtime: 52 ms, faster than 81.82% of Python online submissions for Find the Duplicate Number.
     Memory Usage: 14.5 MB, less than 7.14% of Python online submissions for Find the Duplicate Number.
 
