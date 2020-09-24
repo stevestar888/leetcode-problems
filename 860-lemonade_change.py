@@ -1,8 +1,10 @@
 """
-https://leetcode.com/problems/lemonade-change/submissions/
+https://leetcode.com/problems/lemonade-change/
 
-Strat: Use a greedy algorithm (when a person hands us a $20, always try to give them a 
-    $10 + $5). The case for getting a $5 or $10 is straightforward.
+Strat: Use a greedy algorithm: 
+    when a person hands us a $20, always try to give them a $10 + $5, instead of three $5.
+    `                      ` $10, can only give them a 5
+    `                      ` $5, no need to make change
 
 Runtime: O(n) time, O(1) space
     Runtime: 152 ms, faster than 24.25% of Python online submissions for Lemonade Change.
@@ -19,7 +21,6 @@ class Solution(object):
         #no need to keep track of twenties, bc that can't make change
         
         for bill in bills:
-            print(bill)
             if bill == 5:
                 fives += 1
                 #and don't need to make change
