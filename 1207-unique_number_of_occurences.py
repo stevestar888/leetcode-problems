@@ -1,10 +1,10 @@
 """
 https://leetcode.com/problems/unique-number-of-occurrences/
 
-Strat: First we make a count of how frequently each number occurs
+Strat: 
+    Make a count of how frequently each number occurs
 
-
-Runtime: O(n) time, O(n) space -- one pass thru array & one pass thru dict + construct two dicts
+Stats: O(n) time, O(n) space -- one pass thru array & one pass thru dict + construct two dicts
     Runtime: 20 ms, faster than 92.90% of Python online submissions for Unique Number of Occurrences.
     Memory Usage: 12.9 MB, less than 100.00% of Python online submissions for Unique Number of Occurrences.
 """
