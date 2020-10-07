@@ -73,31 +73,31 @@ class Solution(object):
                 
         return result
     
-    #iterative (not optimized)
-#     def rangeSumBST(self, root, L, R):
-#         """
-#         :type root: TreeNode
-#         :type L: int
-#         :type R: int
-#         :rtype: int
-#         """
-#         result = 0
-#         stack = deque()
-#         stack.append(root)
-        
-#         while stack:
-#             length = len(stack)
+    """
+    Easy recursive
+    Runtime: 340 ms, faster than 33.78% of Python online submissions for Range Sum of BST.
+    Memory Usage: 29.6 MB, less than 14.70% of Python online submissions for Range Sum of BST.
+    """
+    def rangeSumBST(self, root, L, R):
+        """
+        :type root: TreeNode
+        :type L: int
+        :type R: int
+        :rtype: int
+        """
+        self.total = 0
+        def traverse(root):
+            #base case
+            if root == None:
+                return
             
-#             for _ in range(length):
-#                 item = stack.pop()
-#                 print(item.val)
-#                 if L <= item.val <= R:
-#                     result += item.val
-                    
-#                 if item.left:
-#                     stack.append(item.left)
-                    
-#                 if item.right:
-#                     stack.append(item.right)
-                    
-#         return result
+            #recursive case
+            if L <= root.val <= R:
+                self.total += root.val
+                
+            traverse(root.left)
+            traverse(root.right)
+        
+        #--------------end helper function-------------- 
+        traverse(root)
+        return self.total
