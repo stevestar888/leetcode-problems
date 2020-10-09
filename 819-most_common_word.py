@@ -30,7 +30,7 @@ class Solution(object):
         banned_words = set(banned)
         
         counts = {}
-        words = paragraph.split()
+        words = paragraph.split() #luckily, gets rid of repeating 0s as well
         for word in words:
             if word not in banned_words:
                 counts[word] = counts.get(word, 0) + 1
