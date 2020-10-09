@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/two-city-scheduling/submissions/
+https://leetcode.com/problems/two-city-scheduling/
 
 Stats: 
     Runtime: 36 ms, faster than 13.52% of Python online submissions for Two City Scheduling.
