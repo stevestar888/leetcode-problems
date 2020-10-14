@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/merge-two-binary-trees/solution/
+https://leetcode.com/problems/merge-two-binary-trees/
 
 Strat:
     This can be done both iteratively and recursive, like most tree problems,
