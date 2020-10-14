@@ -11,6 +11,9 @@ Runtime: O(n)
 """
 
 class Solution(object):
+    """
+    O(n) / linear time, O(n) / linear space 
+    """
     def singleNumber(self, nums):
         """
         :type nums: List[int]
@@ -26,3 +29,22 @@ class Solution(object):
         for num in set:
             if set[num] == 0:
                 return num
+
+
+    """
+    O(n) / linear time, O(1) space 
+
+    From the leettcoode solution, using the xor operator
+    
+    Good explaination: https://leetcode.com/problems/single-number/discuss/42997/My-O(n)-solution-using-XOR
+    essentially: ((2^2)^(1^1)^(4^4)^(5)) => (0^0^0^5) => 5
+    """
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        a = 0
+        for i in nums:
+            a ^= i
+        return a
