@@ -1,14 +1,12 @@
 """
-https://leetcode.com/problems/reverse-string/submissions/
+https://leetcode.com/problems/reverse-string/
 
 Strat:
     Use two pointers, and narrow in on results.
     
-Stats:
+Stats: O(n) / linear time, O(1) / constant space 
     Runtime: 240 ms, faster than 16.60% of Python online submissions for Reverse String.
     Memory Usage: 19.6 MB, less than 66.41% of Python online submissions for Reverse String.
-
-Cool resource linked: http://pythontutor.com/live.html#mode=edit
 """
 class Solution(object):
     def reverseString(self, s):
