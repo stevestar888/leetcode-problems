@@ -4,6 +4,7 @@ https://leetcode.com/problems/permutation-sequence/
 Brute force way with generating all possible subsets
 and then taking the k-th one.
 
+(algo from https://leetcode.com/problems/permutations/discuss/360280/Python3-backtracking)
 """
 class Solution(object):
     def getPermutation(self, n, k):
