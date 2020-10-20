@@ -43,3 +43,7 @@ class Solution(object):
             
             self.helper(new_list, new_permutation)
         
+
+    """
+    backtracking algo: https://leetcode.com/problems/permutations/discuss/360280/Python3-backtracking
+    """    
