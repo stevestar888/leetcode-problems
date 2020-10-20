@@ -31,17 +31,15 @@ class Solution(object):
         if len(nums_remaining) == 0: #no more numbers to choose (therefore result is full)
             self.result.append(curr_permutation) #add finished permutation 
         
-        # generate all possible permutations, using i as the first/next digit
+        # generate all possible permutations, using i as the chosen digit
         for i, num in enumerate(nums_remaining):
-            # 1 2 3 4
             #create copies
             new_list = nums_remaining[:i] + nums_remaining[i + 1:]
             new_permutation = curr_permutation[:]
             
             # pick and store a number
-            choosen_num = nums_remaining[i]
-            new_permutation.append(choosen_num)
+            chosen_num = nums_remaining[i]
+            new_permutation.append(chosen_num)
             
             self.helper(new_list, new_permutation)
-        
         
