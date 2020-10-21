@@ -1,7 +1,11 @@
 """
 https://leetcode.com/problems/reverse-words-in-a-string-iii/
 
-O(n) / linear time, O(n) / linear space
+Strat:
+    Swap each individual word component of the given string. 
+
+Stats: O(n) / linear time, O(n) / linear space
+
 """
 class Solution(object):
     def reverseWords(self, s):
