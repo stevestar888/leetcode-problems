@@ -1,6 +1,12 @@
 """
 https://leetcode.com/problems/reverse-string/
 
+Basket of “reverse”:
+https://leetcode.com/problems/reverse-string/
+https://leetcode.com/problems/reverse-string-ii/
+https://leetcode.com/problems/reverse-words-in-a-string/
+https://leetcode.com/problems/reverse-words-in-a-string-iii/
+
 Strat:
     Use two pointers, and narrow in on results.
     
