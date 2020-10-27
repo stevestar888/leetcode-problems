@@ -1,6 +1,11 @@
 """
 https://leetcode.com/problems/majority-element/
 
+Majority element basket:
+https://leetcode.com/problems/majority-element/
+https://leetcode.com/problems/majority-element-ii/
+https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/
+
 Strat:
     The majority element must occur at least n / 2 times.
     Looking at index len(n) / 2 gives us the elem that 
