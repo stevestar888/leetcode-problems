@@ -1,5 +1,10 @@
 """
-Brute force
+https://leetcode.com/problems/design-hashmap/
+
+Strat:
+    Brute force
+Stats: 
+
 
 Related: 
 https://leetcode.com/problems/design-hashset/
