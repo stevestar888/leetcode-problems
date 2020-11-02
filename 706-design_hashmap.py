@@ -2,6 +2,7 @@
 https://leetcode.com/problems/design-hashmap/
 
 Strat:
+#TODO
     Brute force
 Stats: 
 
