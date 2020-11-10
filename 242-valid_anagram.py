@@ -76,3 +76,32 @@ class Solution(object):
         
         #all counts match
         return True
+    
+    
+    ### More optimized
+    def isAnagram(self, S, T):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        if len(S) != len(T):
+            return False
+        
+        letter_counts = [0] * 26
+        
+        for s, t in zip(S, T):
+            letter_counts[ord(s) - ord('a')] += 1
+            letter_counts[ord(t) - ord('a')] -= 1
+                          
+        return all(count == 0 for count in letter_counts)
+    
+    
+    ### One liner
+    def isAnagram(self, S, T):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        return Counter(S) == Counter(T)
