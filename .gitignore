@@ -2,6 +2,6 @@
 .DS_Store
 0-playground.py
 pramp-problems/log.md
-/online-assessments
-/mock-practice
 *.sql
+
+/interviews
