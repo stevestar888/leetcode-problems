@@ -49,6 +49,7 @@ class Solution(object):
             
         return result
     
+
     """
     Counting backwards approach
     
@@ -64,14 +65,18 @@ class Solution(object):
         result = [0] * length
         
         for i in range(length - 1, -1, -1): #iterate from right to left
+            print(i, right_max)
             t = T[i]
             
             #see if we can update the max so far
             if right_max <= t:
+                #if right_max is updated, then there can't possibly be a greater elem
+                #thus, just leave result[i], which is 0 (no updates)
                 right_max = t
+                
             else:
+                #right_max is not updated, so there is a temperature guranteed to be 
+                #greater than T[i] -- right_max in the worst case
                 days = 1
-                while T[i+days] <= t:
-                    days += result[i+days]
-                result[i] = days #store days
-        return result
+                while T[i + days] <= t: #find a temp that exceeds T[i]
+                    days += result[i + days]
