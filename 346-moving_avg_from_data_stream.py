@@ -9,6 +9,8 @@ Stats: O(1) / constant time, O(n) / linear space
     Memory Usage: 16.9 MB, less than 22.42% of Python online submissions for Moving Average from Data Stream.
 
 """
+from collections import deque
+
 class MovingAverage(object):
     def __init__(self, size):
         """
