@@ -3,7 +3,7 @@ https://leetcode.com/problems/merge-two-binary-trees/
 
 Strat:
     This can be done both iteratively and recursive, like most tree problems,
-    but the iterative way is really straightforward. If both nodes are empty,
+    but the recursive way is really straightforward. If both nodes are empty,
     then the node to return is also empty. If one node is empty, then just 
     return the other node (because it's not empty). Else, add their sums and
     recursively compute their children.
