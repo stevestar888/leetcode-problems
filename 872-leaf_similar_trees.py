@@ -38,7 +38,6 @@ class Solution(object):
         l1, l2 = [], []
         inorder(root1, l1)
         inorder(root2, l2)
-        print l1, l2
         
         return l1 == l2
     
