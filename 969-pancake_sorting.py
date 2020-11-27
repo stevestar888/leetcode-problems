@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/pancake-sorting/submissions/
+https://leetcode.com/problems/pancake-sorting/
 
 (Hmm code doesn't 100% work, but logic should be correct)
 
@@ -51,4 +51,27 @@ class Solution(object):
             flip(i)
             
         return arr
+    
+    """
+    Interesting idea, similar to bubble sort
+    #TODO
+    """
+    def pancakeSort(self, arr):
+        """
+        :type A: List[int]
+        :rtype: List[int]
+        """
+        print(arr)
+        def flip(k):
+            arr[:] = arr[:k][::-1] + arr[k:]
+
+        i = 0
+        while i < len(arr) and arr[i] < arr[i + 1]:
+            i += 1
+        
+        if i == len(arr) - 1:
+            return arr
+        else:
+            k = i
+            return self.pancakeSort(arr[:k][::-1] + arr[k:])
     
