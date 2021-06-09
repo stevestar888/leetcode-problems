@@ -11,7 +11,7 @@ class Solution(object):
         """
         def localCount():
             inv_count = 0
-            for i in range(len(A) - 1):
+            for i in range(len(A) - 1): #stop 1 short of end so we can check A[i + 1]
                 if A[i] > A[i + 1]:
                     inv_count += 1
             return inv_count
