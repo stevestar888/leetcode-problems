@@ -31,6 +31,8 @@ class Solution(object):
         
     
     """
+    Fancy, abridged version of above.
+
     Runtime: 28 ms, faster than 35.47% of Python online submissions for Sum of Left Leaves.
     Memory Usage: 13.5 MB, less than 35.90% of Python online submissions for Sum of Left Leaves.
     """
