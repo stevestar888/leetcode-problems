@@ -25,8 +25,8 @@ class Solution(object):
                 right = dfs(node.right, False)
 
                 return left + right
-            
-        #--#--#--#--#--#--#--#--#--#--#--#--#--#--#--#--#--#--#--#--#
+        #--------------end helper function-------------- 
+        
         return dfs(root, False)
         
     
