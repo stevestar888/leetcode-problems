@@ -16,6 +16,4 @@ class Solution:
             friend_pairs[p1] = friend_pairs.get(p1, 0) + 1
             friend_pairs[p2] = friend_pairs.get(p2, 0) + 1
         
-        if all(people > 0 for people in friend_pairs.values()) and len(friend_pairs.keys()) == n:
-            return True
-        return False
+        return all(people > 0 for people in friend_pairs.values()) and len(friend_pairs.keys()) == n
