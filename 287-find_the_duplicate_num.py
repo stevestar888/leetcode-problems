@@ -22,3 +22,18 @@ class Solution(object):
                 return num
             else: #change to the neg version of itself
                 nums[num] = -nums[num]
+
+                
+
+    def findDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        store = [0] * len(nums)
+        
+        for i, num in enumerate(nums):
+            if store[num] == num:
+                return num
+            else:
+                store[num] = num
