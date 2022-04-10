@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/maximum-units-on-a-truck/submissions/
+https://leetcode.com/problems/maximum-units-on-a-truck/
 
 Strat:
     Sort & greedy
