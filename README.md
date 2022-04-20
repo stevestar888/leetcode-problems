@@ -6,4 +6,5 @@ A repo that contains my solutions to coding practice problems on leetcode.com! T
 
 Repo also contains some problems from BinarySearch.io & Pramp, which are other prep sites.
 
-File format: [leetcode problem #]-name_of_problem.py
+File format for python 2: [problem #]-name_of_problem.py
+File format for python 3: [problem #]_name-of-problem.py (will almost always the last part of the URL)
