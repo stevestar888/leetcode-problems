@@ -9,18 +9,17 @@ https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-cl
 #         self.right = None
 
 class Solution:
-    def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
-        def traverse(og, copy):
-            if og:
-                if og == target:
-                    self.answer = copy
+#     def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
+#         def traverse(og, copy):
+#             if og:
+#                 if og == target:
+#                     self.answer = copy
                 
-                traverse(og.left, copy.left)
-                traverse(og.right, copy.right)
+#                 traverse(og.left, copy.left)
+#                 traverse(og.right, copy.right)
         
-        traverse(original, cloned)
-        return self.answer
-      
+#         traverse(original, cloned)
+#         return self.answer
 
     def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
         if not original:
@@ -29,4 +28,7 @@ class Solution:
         if original == target:
             return cloned
         
-        return self.getTargetCopy(original.left, cloned.left, target) or self.getTargetCopy(original.right, cloned.right, target)
+        left = self.getTargetCopy(original.left, cloned.left, target)
+        right = self.getTargetCopy(original.right, cloned.right, target)
+        
+        return left or right
