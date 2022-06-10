@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/longest-common-subsequence/solution/
+https://leetcode.com/problems/longest-common-subsequence/
 
 Applications: 
     "Finding the longest common subsequence between two strings is useful for 
@@ -43,7 +43,7 @@ class Solution(object):
             :type word2: str
             :rtype: int
             """
-            #base cases (empty string)
+            #iterated through one (or both) of the string(s)
             if idx1 == len1 or idx2 == len2:
                 return 0
             
@@ -53,10 +53,10 @@ class Solution(object):
             #recursive cases
             answer = 0
             if text1[idx1] == text2[idx2]:
-                #if the char matches
+                #chars matches
                 answer = 1 + lcs(idx1 + 1, idx2 + 1)
             else: 
-                #if the chars don't match
+                #chars don't match, determine which string to move along on
                 call1 = lcs(idx1 + 1, idx2)
                 call2 = lcs(idx1, idx2 + 1)
                 answer = max(call1, call2)
