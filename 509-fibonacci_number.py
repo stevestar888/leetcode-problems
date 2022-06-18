@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/fibonacci-number/submissions/
+https://leetcode.com/problems/fibonacci-number/
 
 Strat:
     This is the "Iterative Top-Down" approach. However, you can do better
