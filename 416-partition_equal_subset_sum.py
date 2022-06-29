@@ -1,5 +1,5 @@
 """
-https://leetcode.com/problems/partition-equal-subset-sum/submissions/
+https://leetcode.com/problems/partition-equal-subset-sum/
 
 Strat:
     Surprisingly, this is a dp problem. In fact, it's a lot like the 0-1
@@ -55,3 +55,42 @@ class Solution(object):
             return take or dont_take
         
         return dp(0, TARGET)
+
+
+
+    """
+    attempt 2 years later; interestingly, using a dictionary will result in TLE
+    so that means the 2d list is faster
+    
+    Runtime: 2589 ms, faster than 31.54% of Python3 online submissions for Partition Equal Subset Sum.
+    Memory Usage: 14.7 MB, less than 71.68% of Python3 online submissions for Partition Equal Subset Sum.
+    """
+    def canPartition(self, nums: List[int]) -> bool:
+        #check if there is a half
+        if sum(nums) % 2 == 1:
+            return False
+        
+        half = sum(nums) // 2
+        
+        memo = [[-1] * (half + 1)] * len(nums)
+        
+        def solve(i, running_sum, target):
+            if running_sum == target:
+                return True
+            elif running_sum > target:
+                return False
+            elif i > len(nums) - 1:
+                return False
+            
+            if memo[i][running_sum] != -1:
+                # print((i, running_sum))
+                return memo[i][running_sum]
+            
+            take = solve(i + 1, running_sum + nums[i], target)
+            do_not_take = solve(i + 1, running_sum, target)
+            
+            memo[i][running_sum] = take or do_not_take
+            return take or do_not_take
+        
+        # now the problem is the 0/1 knapsack, with target=half
+        return solve(0, 0, half)
