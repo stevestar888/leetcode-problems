@@ -1,21 +1,21 @@
 """
 Strat:
-    Use a prefix and suffix array. Here's an exmaple
+    Use a prefix and suffix array that track the cumulative product. Here's an example:
     1  2  3  4  (OG array)
-    1  2  6  1  (starting from left, last elem is 1)
-    1  24 12 4  (starting from right, first elem is 1)
+    1  2  6  1  (starting from left, last elem is set as 1)
+    1  24 12 4  (starting from right, first elem is set as 1)
     
     To calculate the result array:
     index 0:
-        left[-1] * right[1]
+        left[0-1] * right[0+1]
         =      1 * 24 = 24
         
     index 1:
-        left[0] * right[2]
+        left[1-1] * right[1+1]
         =     1 * 12 = 12
         
     index 3:
-        left[2] * right[4%len]
+        left[3-1] * right[3+1 % 4]
         =     6 * 1 = 6
         
 Stats: O(n) time, O(1) space
