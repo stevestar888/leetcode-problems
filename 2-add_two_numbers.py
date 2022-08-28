@@ -8,7 +8,6 @@ A few tricky cases:
 
 [0]
 [0]
-
 """
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
